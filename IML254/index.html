@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Personal Website ✨</title>
+
+<!-- Aesthetic Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Soft white overlay */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.82);
+    height: 100vh;
+}
+
+/* Grid layout */
+.container {
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-template-rows: 120px auto;
+    height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-row: 1 / span 2;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 10px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    color: #ff4da6;
+}
+
+/* ⭐ TOP NAVIGATION WITH BACKGROUND IMAGE ⭐ */
+.topnav {
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+
+    /* Background image added here */
+    background-image: url("my personal website top menu background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Light overlay so text is readable */
+    background-color: rgba(229, 229, 229, 0.85);
+    backdrop-filter: blur(2px);
+}
+
+.topnav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.5);
+    padding: 5px 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    color: #b30000;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Moving Aesthetic Title */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #333;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Float Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Photo Frame Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 40px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 18px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <a href="index.html">🏠 Home</a>
+    <a href="About myself.html">💖 About Myself</a>
+    <a href="biodata.html">📄 Biodata</a>
+    <a href="hobby.html">🌸 Hobby</a>
+    <a href="family.html">👨‍👩‍👧 Family</a>
+    <a href="gallery.html">📸 Gallery</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="copyright.html">👤 Copyright</a>
+</div>
+
+<!-- ⭐ TOP NAVIGATION WITH BACKGROUND IMAGE ⭐ -->
+<div class="topnav">
+    <a href="index.html">🏠 Home</a> |
+    <a href="About myself.html">💖 About Myself</a> |
+    <a href="biodata.html">📄 Biodata</a> |
+    <a href="hobby.html">🌸 Hobby</a> |
+    <a href="family.html">👨‍👩‍👧 Family</a> |
+    <a href="gallery.html">📸 Gallery</a> |
+    <a href="education.html">🎓 Education</a> |
+    <a href="copyright.html">👤 Copyright</a>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <h2>✨ Welcome to My Personal Website ✨</h2>
+
+    <p style="text-align:center; font-size:18px;">
+        Hi! Sir made it to my website! 💕<br>
+        “First and foremost, I would like to express my sincere gratitude to <strong>Sir Mahadi Bin Mahmood</strong> for giving me this assignment. 🙏
+        <br><br>
+        Through this website, I hope Sir enjoys exploring all the content I have created. 🌟  
+        Thank you, Sir, and I hope you enjoy browsing! 😊✨”
+    </p>
+
+    <!-- Photos -->
+    <div class="image-grid">
+        <img src="home1.jpg" alt="Photo 1">
+        <img src="home2.jpg" alt="Photo 2">
+        <img src="home3.jpg" alt="Photo 3">
+        <img src="home4.jpg" alt="Photo 4">
+        <img src="home5.jpg" alt="Photo 5">
+    </div>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
